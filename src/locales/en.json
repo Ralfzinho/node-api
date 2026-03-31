@@ -13,6 +13,13 @@
     "required_review_fields": "userId, gameId, rating and comment are required",
     "required_review_update_fields": "rating or comment is required",
     "invalid_rating": "rating must be an integer between 1 and 5",
-    "review_already_exists": "user already posted a review for this game"
+    "review_already_exists": "user already posted a review for this game",
+    "buysell_not_found": "buysell not found",
+    "required_buysell_fields": "userId, gameId, title and type are required",
+    "invalid_buysell_type": "type must be 'buy' or 'sell'",
+    "invalid_price": "price must be a positive integer",
+    "invalid_final_price": "finalPrice must be a positive integer",
+    "invalid_quantity": "quantity must be a positive integer",
+    "invalid_buysell_status": "status must be 'active', 'sold' or 'closed'"
   }
 }

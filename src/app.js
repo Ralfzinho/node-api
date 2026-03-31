@@ -3,6 +3,7 @@ import cors from "cors";
 import userRoutes from "./routes/userRoutes.js";
 import gameRoutes from "./routes/gameRoutes.js";
 import reviewRoutes from "./routes/reviewRoutes.js";
+import buysellRoutes from "./routes/buysellRoutes.js";
 import i18n from "./config/i18n.js";
 
 const app = express();
@@ -18,9 +19,5 @@ app.get("/health", (req, res) => {
 app.use("/api/users", userRoutes);
 app.use("/api/games", gameRoutes);
 app.use("/api/reviews", reviewRoutes);
-
-app.use((req, res) => {
-  res.status(404).json({ message: req.__("errors.route_not_found") });
-});
-
+app.use("/api/buysells", buysellRoutes);
 export default app;

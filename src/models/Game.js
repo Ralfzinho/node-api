@@ -7,6 +7,7 @@ import {
 } from "typeorm";
 import { User } from "./User.js";
 import { Review } from "./Review.js";
+import { Buysell } from "./buysell.js";
 
 @Entity("games")
 class Game {
@@ -36,6 +37,9 @@ class Game {
 
   @OneToMany(() => Review, (review) => review.game)
   reviews;
+
+  @OneToMany(() => Buysell, (buysell) => buysell.game)
+  buysells;
 }
 
 export { Game };

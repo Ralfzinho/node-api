@@ -13,6 +13,13 @@
     "required_review_fields": "userId, gameId, rating e comment sao obrigatorios",
     "required_review_update_fields": "rating ou comment sao obrigatorios",
     "invalid_rating": "rating deve ser um inteiro entre 1 e 5",
-    "review_already_exists": "usuario ja publicou review para este jogo"
+    "review_already_exists": "usuario ja publicou review para este jogo",
+    "buysell_not_found": "compra/venda nao encontrada",
+    "required_buysell_fields": "userId, gameId, title e type sao obrigatorios",
+    "invalid_buysell_type": "type deve ser 'buy' ou 'sell'",
+    "invalid_price": "price deve ser um inteiro positivo",
+    "invalid_final_price": "finalPrice deve ser um inteiro positivo",
+    "invalid_quantity": "quantity deve ser um inteiro positivo",
+    "invalid_buysell_status": "status deve ser 'active', 'sold' ou 'closed'"
   }
 }

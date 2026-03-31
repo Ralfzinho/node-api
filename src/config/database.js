@@ -4,6 +4,7 @@ import { DataSource } from "typeorm";
 import { User } from "../models/User.js";
 import { Game } from "../models/Game.js";
 import { Review } from "../models/Review.js";
+import { Buysell } from "../models/buysell.js";
 
 dotenv.config();
 
@@ -12,16 +13,11 @@ const databaseConfig = {
   host: process.env.DB_HOST || "localhost",
   port: Number(process.env.DB_PORT) || 5433,
   username: process.env.DB_USER || "postgres",
-<<<<<<< Updated upstream
   password: process.env.DB_PASSWORD || "postgres",
   database: process.env.DB_NAME || "aula",
-=======
-  password: process.env.DB_PASSWORD || "masterkey",
-  database: process.env.DB_NAME || "node_api",
->>>>>>> Stashed changes
   synchronize: process.env.DB_SYNCHRONIZE === "true" || true,
   logging: false,
-  entities: [User, Game, Review],
+  entities: [User, Game, Review, Buysell],
 };
 
 export const appDataSource = new DataSource(databaseConfig);
