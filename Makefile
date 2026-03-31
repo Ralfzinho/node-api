@@ -2,7 +2,7 @@
 
 # Variáveis
 NODE_BIN=./node_modules/.bin
-DOCKER_COMPOSE=docker-compose
+DOCKER_COMPOSE=docker compose
 
 # Cores para output
 YELLOW=\033[0;33m

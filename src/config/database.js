@@ -10,11 +10,11 @@ dotenv.config();
 const databaseConfig = {
   type: "postgres",
   host: process.env.DB_HOST || "localhost",
-  port: Number(process.env.DB_PORT) || 5432,
+  port: Number(process.env.DB_PORT) || 5433,
   username: process.env.DB_USER || "postgres",
-  password: process.env.DB_PASSWORD || "masterkey",
-  database: process.env.DB_NAME || "node_api",
-  synchronize: process.env.DB_SYNCHRONIZE === "true",
+  password: process.env.DB_PASSWORD || "postgres",
+  database: process.env.DB_NAME || "aula",
+  synchronize: process.env.DB_SYNCHRONIZE === "true" || true,
   logging: false,
   entities: [User, Game, Review],
 };
